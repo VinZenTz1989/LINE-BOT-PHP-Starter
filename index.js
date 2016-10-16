@@ -29,7 +29,7 @@ app.get('/', parser, function (req, res) {
 });
 
 bot.on('message', function (event) {
-  console.log('Boss');
+
 	event.reply(event.message.text).then(function (data) {
 		console.log('Success', data);
 	}).catch(function (error) {
@@ -37,6 +37,6 @@ bot.on('message', function (event) {
 	});
 });
 
-app.listen(4000 || 80, function () {
+app.listen(process.env.PORT || 80, function () {
 	console.log('LineBot is running on port 4000');
 });
