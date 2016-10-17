@@ -16,4 +16,4 @@ bot.on('message', function (event) {
     });
 });
 
-bot.listen('/linewebhook', process.env.port);
+bot.listen('/linewebhook', process.env.port || 3000);
