@@ -56,7 +56,7 @@ class LineBot extends EventEmitter {
 	}
 
 	static createMessages(message) { 
-		message = message || []
+		message = message || ['']
 		if (typeof message === 'string') {
 			return [{ type: 'text', text: message }];
 		} else if (message.constructor === Array) {
