@@ -15,7 +15,7 @@ const parser = bodyParser.json({
 		req.rawBody = buf.toString(encoding);
 	}
 });
-
+   
 app.post('/linewebhook', parser, function (req, res) {
 	console.log('Log',req.get('X-Line-Signature'));
 	console.log('Body', req.rawBody);
