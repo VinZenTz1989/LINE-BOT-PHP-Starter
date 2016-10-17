@@ -40,6 +40,8 @@ bot.on('message', function (event) {
 	});
 });
 
+bot.push("U14b33e61945b6ea6bde3b302d9b4ab48","Boss");
+
 app.listen(process.env.PORT || 3000, function () {
 	console.log('LineBot is running.');
 });
