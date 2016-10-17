@@ -17,7 +17,7 @@ const parser = bodyParser.json({
 });
 
 app.post('/linewebhook', parser, function (req, res) {
-	console.log(req.get('X-Line-Signature'));
+	console.log('Log',req.get('X-Line-Signature'));
 	if (!bot.verify(req.rawBody, req.get('X-Line-Signature'))) {
 		return res.sendStatus(400);
 	}
