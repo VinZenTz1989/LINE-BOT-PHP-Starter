@@ -17,6 +17,7 @@ const parser = bodyParser.json({
 });
 
 app.post('/linewebhook', parser, function (req, res) {
+	console.log(req.get('X-Line-Signature'));
 	if (!bot.verify(req.rawBody, req.get('X-Line-Signature'))) {
 		return res.sendStatus(400);
 	}
@@ -37,6 +38,6 @@ bot.on('message', function (event) {
 	});
 });
 
-app.listen(process.env.PORT || 80, function () {
+app.listen(process.env.PORT || 3000, function () {
 	console.log('LineBot is running.');
 });
