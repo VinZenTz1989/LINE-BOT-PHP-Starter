@@ -32,6 +32,7 @@ app.get('/', function (req, res) {
 
 
 bot.on('message', function (event) {
+	console.log('Message Event', event);
 	event.reply(event.message.text).then(function (data) {
 		console.log('Success', data);
 	}).catch(function (error) {
