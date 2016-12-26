@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 	});
 });
 
-var count = 0;
+var count = 7;
 var message = 
 `สรุป ตอนนี้มีสองเรื่อง  
  1. นัดรับประทานอาหาร (ขอคอนเฟิมด้วย) https://www.surveymonkey.com/r/DJGGHX2 : น้าม เล็ก ก้อย บูม บอส  
