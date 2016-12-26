@@ -3,9 +3,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const bot = linebot({
-    channelId: "1484524579",
-    channelSecret: "d37936b83102309d5a7dcc6dc46db5a7",
-    channelAccessToken: "hr2r8ePdDroHXqjqoVvbT8MSP0umxs1obr9vik9tTs9KYGIaK8xvbEZ53m52JdX73MSqjryJBiblK9CGNUDOP2kozlg/Cksx3dGoX94oMmrxvoLM+CTwlhSKO6bdcrZMSopXLFkqroQKcjs/DdWHGAdB04t89/1O/w1cDnyilFU=", 
+    channelId: "1494059819",
+    channelSecret: "4c9c4c576bfefea4a5ec28040ddb3f4c",
+    channelAccessToken: "6E20YFvobv2T7Svuy0S4EmgjzTimRaMUolzCTtXJnZKr1cwhx7VOnYXq2WVE1o/aJU/1rLXHc8If1LveZUxa9T4nFCjwWAbFztOUloNcMEkzh2nsnucS9Hn0lrlJJ8+G8hYX3TTUlCsPzO5dAS78UAdB04t89/1O/w1cDnyilFU=", 
 });
 
 const app = express();
@@ -32,15 +32,16 @@ app.get('/', function (req, res) {
 
 
 bot.on('message', function (event) {
-	console.log('Message Event', event);
+
 	event.reply(event.message.text).then(function (data) {
-		console.log('Success', data);
+
+		event.reply({ type: 'text', text: 'Hello, world' });
+
 	}).catch(function (error) {
 		console.log('Error', error);
 	});
 });
 
-bot.push("U14b33e61945b6ea6bde3b302d9b4ab48","Boss");
 
 app.listen(process.env.PORT || 3000, function () {
 	console.log('LineBot is running.');
