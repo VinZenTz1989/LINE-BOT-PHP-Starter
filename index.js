@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 	});
 });
 
-var count = 20;
+var count = 19;
 var message = 
 `สรุป 
  1. นัดรับประทานอาหาร วันที่ 4 กุมภาพันธ์ พุทธศักราช 2560 : น้าม เล็ก ก้อย บูม บอส เซียน พี่พร แตร กอล์ฟ 
@@ -44,7 +44,7 @@ var message =
 bot.on('message', function (event) {
 	
 	count++;
-	if (count >= 20) {
+	if (count === 20) {
 
 		event.reply(message).then(function (data) {
 
