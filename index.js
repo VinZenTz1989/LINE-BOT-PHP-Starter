@@ -43,7 +43,7 @@ var message =
 bot.on('message', function (event) {
 	
 	count++;
-	if (count === 8) {
+	if (count === 20) {
 
 		event.reply(message).then(function (data) {
 
