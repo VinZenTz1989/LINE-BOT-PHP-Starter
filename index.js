@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 	});
 });
 
-var count = 7;
+var count = 20;
 var message = 
 `สรุป ตอนนี้มีสองเรื่อง  
  1. นัดรับประทานอาหาร วันที่ 2 กุมภาพันธ์ พุทธศักราช 2560 : น้าม เล็ก ก้อย บูม บอส เซียน
@@ -44,7 +44,7 @@ var message =
 bot.on('message', function (event) {
 	
 	count++;
-	if (count === 20) {
+	if (count >= 20) {
 
 		event.reply(message).then(function (data) {
 
