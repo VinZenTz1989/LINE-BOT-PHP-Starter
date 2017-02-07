@@ -37,7 +37,8 @@ app.get('/', function (req, res) {
 var count = 10;
 var message = 
 `สรุป 
- 1. ไปเที่ยว 1-2 Jul 2017 โหวต
+ 1. ไปเที่ยว 1-2 Jul 2017 โหวต: https://docs.google.com/forms/d/e/1FAIpQLScBTxEJQkj9xY7sw_B_3zqq7rtIEvtA_70UQNJc5Mhry8Gh6w/viewform
+     ปิดโหวต 9 Feb 2017
     > แม่วง - เขียวขจี เย็นฉ่ำ เข้าป่า
     > พะเนินทุ่ง ทะเลหมอก นั่งโฟวิลขึ้น
     > อ่างเก็บน้ำหุบเขาวง นอนแพ ไอหมอกจางๆ
