@@ -36,9 +36,7 @@ app.get('/', function (req, res) {
 
 var count = 10;
 var message = 
-`28-29 Jul 2017 > พะเนินทุ่ง ทะเลหมอก นั่งโฟวิลขึ้น > พี่พร, กี้, บอส, พี่ก้อย, ซซ, บูม, กอฟ, จอจ, เม, น้ำ, เล็ก, นัท
-                > Plan 1=> พะเนินทุ่ง
-                > Plan 2=> ?????
+`Have a nice day :)
 `;
 
 bot.on('message', function (event) {
